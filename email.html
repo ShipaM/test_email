@@ -1,0 +1,822 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  href="http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet" />
+
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+        
+
+        [style*="Raleway"] {
+            font-family: 'Raleway', arial, sans-serif !important;
+        }
+        [style*="Helvetica"] {
+            font-family: 'Helvetica', arial, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+
+            
+        }
+
+        .td-thanks-desc h2 {
+            color: #0276a5;
+            font-size: 38px;
+            line-height: 28px;
+            margin: 0;
+            margin-bottom: 15px;
+            font-weight: 700;
+
+        }
+
+
+        .td-content-thank{
+            padding-top: 34px;
+        }
+        .td-thanks-desc{
+            padding-top: 36px;
+            padding-left: 20px;
+        }
+        .td-thanks-desc p {
+            color: #545556;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0;
+        }
+        .td-thanks-desc a {
+            display: none;
+        }
+
+        .td-thanks-image {
+            border-right: 1px solid #0377a8;
+            padding-left: 20px;
+            padding-right: 5px;
+        
+        }
+        .td-content{
+            padding-bottom: 55px;
+        }
+        .td-content p{
+            color: #545556;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0;
+            padding-top: 3px;
+            padding-left: 40px;
+            
+        }
+        .td-content a{
+            color: #0276a5;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0;
+            padding-top: 10px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .td-content-card.pb-8{
+            padding-bottom: 56px;
+        }
+        p.td-content-p{
+            margin-bottom: 13px;
+        }
+        .td-congratulations-header{
+            padding-top: 30px;
+        }
+        .td-congratulations-header h3 {
+            font-size: 32px;
+            line-height: 28px;
+            margin: 0;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            /* margin-bottom: 30px; */
+        }
+        .td-congratulations-desc {
+            font-size: 18px;
+            line-height: 6px;
+            margin: 0;
+            color: #ffffff;
+        }
+        .td-congratulations-desc br{
+            display: none!important;
+        }
+        .td-content-text{
+            padding-top: 30px;
+            padding-bottom: 18px;
+        }
+        .td-congratulation-list{
+            width: 50%;
+        }
+        .td-congratulation-list ol{
+            list-style: none;
+            padding: 0;
+        }
+        .td-congratulation-list li{
+            list-style: none;
+            color:#ffffff;
+            margin-bottom: 39px;
+            font-size: 18px;
+            line-height: 1px;
+        }
+        .td-congratulation-list h5{
+            color:#ffffff;
+            font-size: 18px;
+            line-height: 23px;
+            
+        }
+
+        .td-congratulation-col{
+            padding-bottom: 12px;
+        }
+        .td-about-header h3{
+            color: #5f97b6;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .td-content-about{
+            padding-top: 25px;
+    
+        }
+        .td-content-about p{
+            color: #545556;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0;
+            margin-bottom: 23px;
+        }
+        .td-card h5{
+            color: #109aa7;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0;
+            font-weight: 700;
+            
+        }
+        .td-card p{
+            color: #2f2f30;
+            font-size: 16px;
+            line-height: 25px;
+            margin: 0;
+            font-weight: 700;
+            
+        }
+        .td-card img{
+            margin: 0;
+            margin-bottom: 14px;
+        }
+        p.td-card-desc{
+            
+            font-size: 16px;
+            line-height: 22px;
+            color: #828384;
+            font-weight: 400;
+        
+        }
+
+        .td-card a{
+            color:#109aa7;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        a.card-phone{
+            color:#545556;
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration: none;
+        }
+        p.mb20{
+            margin-bottom: 12px;
+        }
+
+        .td-footer-logo{
+            padding-top: 36px;
+            padding-bottom: 31px;
+        }
+        .td-footer-text p{
+            color: #d3d3d3;
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0;
+        }
+        .td-footer-copyright p{
+            color: #d3d3d3;
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0;
+            margin-bottom: 24px;
+        }
+        .td-footer-social{
+            padding-bottom: 20px;
+            padding-right: 14px;
+            padding-left: 14px;
+        
+        }
+        .td-content-card{
+            padding-bottom: 40px;
+        }
+        @media(max-width: 660px) {
+            .table-640{
+                width: 600px!important;
+            }
+            .table-600{
+                width: 580px!important;
+            }
+        }
+
+        @media(max-width: 660px) {
+
+            .table-600{
+                width: 360px!important;
+                
+            }
+            .table-640{
+                width: 360px!important;
+                
+            }
+            .td-congratulation-col td{
+                display: block !important;
+            }
+            .td-thanks-image {
+                display: block !important;
+                border: 0!important;
+                padding: 0 30px;
+                margin-bottom: 38px;
+            }
+            .td-thanks-image img{
+                width: 100%;
+            }
+            .td-thanks-desc span{
+                display: none;
+        }
+            .td-thanks-desc{
+                display: block !important;
+                padding: 0 18px;
+            }
+            .td-thanks-desc a{
+            display: block!important;
+        }
+
+            .td-thanks-desc br{
+                display: none !important;
+            }
+            .td-content-continue br {
+                display: none !important;
+            }
+            p.td-content-p{
+                padding-top: 0;
+                display: none;   
+            }
+            p.thanks-p{
+                padding-top: 16px;
+                padding-left: 19px;
+            }
+            p.thanks-p br{
+                display: none!important;
+            }
+
+            .td-content{
+                padding-bottom: 60px;
+            }
+            .td-content-continue p{
+                padding-right: 20px;
+                padding-left: 20px;    
+            }
+            .td-congratulation-list{
+                padding-left: 17px;
+                padding-right: 17px;
+                
+            }
+            .td-congratulations-desc br{
+                display: block!important;
+            }
+            .td-line{
+                display: none!important;
+            }
+            .td-card{
+                display: block!important;
+                
+            }
+            .td-card.pl-20{
+                padding-left: 20px;
+            }
+            .td-about-header,.td-about-desc{
+                padding-left: 20px;
+            }
+
+            .td-thanks-desc a br{
+            display: block!important;
+            }
+            p.thanks-p{
+                padding-right: 19px;
+            }
+            .td-congratulations-header h3{
+                font-size: 28px;
+                line-height: 19px;
+                
+            }
+            .td-congratulation-list h5{
+                line-height: 0px;
+                font-weight: normal;
+            }
+
+            .td-congratulation-list li{
+                margin-bottom: 23px;
+                line-height: 1;
+            }
+            .td-congratulation-list{
+                margin-bottom: 67px;
+            }
+            .td-congratulations-desc{
+                line-height: 25px;
+            }
+            .td-congratulation-list.pl-18{
+                padding-left: 18px!important;
+                margin-bottom: 36px!important;
+            }
+            .td-card img{
+                width: 100%;
+            }
+            .td-card.pr-20{
+                padding-bottom: 37px;
+                padding-right: 20px;
+            }
+            .td-content-card{
+                padding-bottom: 0;
+            }
+            .td-content-card.pb-8 {
+                padding-bottom: 27px;
+            }
+            .td-footer-logo img{
+                width: 242px;
+            }
+            .td-footer-social {
+                padding-right: 13px;
+                padding-left: 13px;
+                padding-bottom: 26px;
+            }
+            .td-footer-logo {
+                padding-bottom: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;"> 
+    <div style="font-size:0px; font-color:#ffffff; opacity:0; visibility:hidden; width:0; height:0;display:none;" >Тестовое
+        письмо</div>
+    <table class="wrap-table-email" cellpadding="0" cellspacing="0" width="100%"   border="0" bgcolor=#f2f2f2>
+        <tr><!-- /.header -->
+            <td class="wrap-td-header">
+                <table class="table-header table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center">
+                    <tr>
+                        <td class="td-line" height="57px" width="640"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-header" align="center" bgcolor="#ffffff">
+                            <table class="table-640" cellpadding="0" cellspacing="0" width="640" align="center">
+                                <img src="banner1.png" alt="banner"/>
+                            </table>
+                        </td>
+                        <!-- /.td-header -->
+                    </tr>
+
+                </table>
+                <!-- /.table-header -->
+            </td>
+            <!-- /.wrap-td-header -->
+        </tr>
+
+        <tr><!--/. content -->
+            <td class="wrap-td-content">
+                <tr>
+                    <td>
+                        <table class="table-content-thank table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center" bgcolor="#ffffff">
+                            <tr>
+                                <td class="td-content-thank">
+                                    <table class="table-content-one table-600" border="0" cellspacing="0" cellpadding="0" width="600"align="center">
+                                        <tr>
+                                            <td class="td-thanks-image" align="left">
+                                                <img src="thank.png" alt="thank you">
+                                            </td>
+                                            <!-- /.td-thanks-image-->
+
+                                            <td class="td-thanks-desc">
+                                                <h2 style="font-family:Arial, Helvetica, sans-serif, Raleway">THANK YOU!</h2>
+                                                <p style="font-family:Arial, sans-serif, Helvetica">This is an  exciting time for all of
+                                                us here at
+                                                <br /> Alignment.Together we have achieved<br /> impressive business results
+                                                by leading with<br /> a sense of purpose-to put the senior first in
+                                                <br />everything we do. Our IPO itself is not the<br /> finishline,
+                                                but rather is <span>another inflection</span> 
+                                                <a>another inflection  point. It marks the be-<br />ginning of the next phase of our journey to achieve  our mission to change healthcare one senior at a time.</a>
+                                                </p>
+                                            </td>
+                                            <!-- /.td-thanks-desc -->
+                                        </tr>
+                                    </table>
+                                    <!-- /.table-content-thank table-640 -->
+                                </td>
+                                <!-- /.td-content-thank -->
+                            </tr>
+                        </table>
+                        <!--/. table-content-thank table-640 -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="table-content table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center"
+                        bgcolor="#ffffff">
+                            <tr>
+                                <td class="td-content">
+                                    <table class="table-content-two table-600" border="0" cellspacing="0" cellpadding="0" width="600"
+                                    align="center">
+                                        <tr>
+                                            <p class="td-content-continue">
+                                                <p class="td-content-p" style="font-family:Arial, sans-serif, Helvetica">
+                                                point. It marks the beginning of the next phase of our journey to<br /> achieve  our
+                                                mission to change healthcare one senior at a time.
+                                                </p>
+                                                <p class="thanks-p" style="font-family:Arial, sans-serif, Helvetica">
+                                                    <a href="#" target="_blank" style="font-family:Arial, sans-serif, Helvetica">What
+                                                    does IPO mean to you?</a> A promising future for Alignment<br /> Health Care.
+                                                Bigger, Faster Better. Look for us to expand our footprint <br />and Benefits.
+                                                </p>
+                                            </td>
+            
+                                        </tr>
+            
+                                    </table>
+                                </td>
+                            </tr>
+            
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-content-congratulation">
+                        <table class="table-content-congratulation table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center" bgcolor="#109aa7">
+                            <tr>
+                                <td class="td-congratulations-header">
+                                    <h3 style="font-family:Arial, Helvetica, sans-serif, Raleway" align="center">CONGRATULATIONS!</h3>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td class="td-congratulations-desc" align="center">
+                                    <p style="font-family:Arial, sans-serif, Helvetica">Congratulations to our</br> top 5 agency partners and agents.</p> 
+                                </td>
+                                <!-- /.td-congratulations-desc -->
+                            </tr>
+
+                            <tr>
+                                <td class="td-congratulation-col">
+                                    <table class="table-congratulation-col table-600" border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+                                        <tr>
+                                            <td class="td-congratulation-list">
+                                                <h5 style="font-family:Arial, sans-serif, Helvetica">Agency Partners</h5>
+                                                <ol>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">1</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">2.</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">3.</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">4.</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">5.</li>
+                                                </ol>
+                                            </td>
+                                            <!-- /.td-congratulation-list -->
+                                            <td class="td-congratulation-list pl-18" style="padding-left:10px;">
+                                                <h5 style="font-family:Arial, sans-serif, Helvetica">Agents</h5>
+                                                <ol>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">1</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">2.</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">3.</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">4.</li>
+                                                    <li style="font-family:Arial, sans-serif, Helvetica">5.</li>
+                                                </ol>
+                                            </td>
+                                            <!-- /.td-congratulation-list -->
+                                        </tr>
+                                    </table>
+                                    <!-- /.table-congratulation-col -->
+                                </td>
+                                <!-- /.td-congratulation-col -->
+                            </tr>
+                        </table>
+                        <!-- /.table-content-congratulation -->
+                    </td>
+                    <!-- /.td-content-congratulation -->
+
+                </tr>
+
+                <tr>
+                    <td bgcolor="#f2f2f2">
+                        <table class="table-white table-640" cellpadding="0" cellspacing="0" width="640" align="center" bgcolor="#ffffff">
+                            <tr><td height="57px" width="640">
+
+                            </td></tr>
+                        </table>
+                        <!-- /.table-white -->
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <table class="table-content-about table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center"
+                        bgcolor="#e1e1e1">
+                            <tr>
+                                <td class="td-content-about">
+                                    <table class="table-about table-600" border="0" cellspacing="0" cellpadding="0" width="600"
+                                    align="center">
+                                        <tr>
+                                            <td class="td-about-header">
+                                                <h3 style="font-family:Arial, Helvetica, sans-serif, Raleway">WANT TO LEARN MORE ABOUT<br/>
+                                                    ALIGNMENT?</h3>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td-about-desc">
+                                                <p style="font-family:Arial, sans-serif, Helvetica">Please join us for additional trainings</p>
+                                            </td>
+                                            <!-- /.td-about-desc -->
+                                        </tr>
+
+
+
+                                    </table>
+                                    <!-- /.table-about -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- /.td-content-card -->
+                </tr>
+
+                <tr>
+                    <td class="td-card" >
+                        <table class="table-content-card table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center"
+                        bgcolor="#e1e1e1">
+                            <tr>
+                                <td class="td-content-card">
+                                    <table class="table-card table-600" border="0" cellspacing="0" cellpadding="0" width="600"
+                                    align="center">
+
+
+                                        <tr>
+                                            <td class="td-card pl-20 pr-20">
+                                                <img src="card1.png" alt="photo1">
+                                                <h5 style="font-family:Arial, Helvetica, sans-serif, Raleway">BLACK CARD & SUPPLEMENTAL</h5>
+                                                <p style="font-family:Arial, sans-serif, Helvetica">06/07/2021 10AM PST / 1PM EST</p>
+                                                <p class="mb20" style="font-family:Arial, sans-serif, Helvetica">07/12/2021 10AM PST / 1PM EST</p> 
+                                                <p class="td-card-desc" style="font-family:Arial, sans-serif, Helvetica">
+                                                    Join on your computer or mobile app<br/> 
+                                                    <a href="#" target="_blank" class="card-click">CLICK HERE</a>  to join the meeting, or<br/>
+                                                    call in (audio only)<br/>
+                                                    <a href="(866) 789-6243" target="_blank" class="card-phone">(866) 789-6243,,180919972#</a>
+                                                </p>
+                                            </td>
+                                            <!-- /.td-card -->
+
+
+                                            <td class="td-card pr-20" style="padding-left: 20px;">
+                                                <img src="card2.png" alt="photo2">
+                                                <h5 style="font-family:Arial, Helvetica, sans-serif, Raleway">ONLINE ENROLLMENT</h5>
+                                                <p style="font-family:Arial, sans-serif, Helvetica">06/01/2021 10AM PST / 1PM EST</p>
+                                                <p class="mb20" style="font-family:Arial, sans-serif, Helvetica">07/12/2021 10AM PST / 1PM EST</p>
+                                                <p class="td-card-desc" style="font-family:Arial, sans-serif, Helvetica">
+                                                    Join on your computer or mobile app<br/> 
+                                                    <a href="#" target="_blank" class="card-click">CLICK HERE</a>  to join the meeting, or<br/>
+                                                    call in (audio only)<br/>
+                                                    <a href="(866) 789-6243" target="_blank" class="card-phone">(866) 789-6243,,180919972#</a>
+                                                </p> 
+                                            </td>
+                                            <!-- /.td-card -->
+
+
+                                        </tr>
+
+                                    </table>
+                                    <!-- /.table-card -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- /.td-content-card -->
+                </tr>
+                <tr>
+                    <td class="td-card" >
+                        <table class="table-content-card table-640" border="0" cellspacing="0" cellpadding="0" width="640" align="center"
+                        bgcolor="#e1e1e1">
+                            <tr>
+                                <td class="td-content-card pb-8" >
+                                    <table class="table-card table-600" border="0" cellspacing="0" cellpadding="0" width="600"
+                                    align="center">
+
+
+                                        <tr>
+                                            <td class="td-card pl-20 pr-20">
+                                                <img src="card3.png" alt="photo1">
+                                                <h5 style="font-family:Arial, Helvetica, sans-serif, Raleway">PART D PHARMACY/CLINICAL</h5>
+                                                <p style="font-family:Arial, sans-serif, Helvetica">06/07/2021 12PM PST / 3PM EST</p>
+                                                <p class="mb20" style="font-family:Arial, sans-serif, Helvetica">07/12/2021 12PM PST / 3PM EST</p> 
+                                                <p class="td-card-desc" style="font-family:Arial, sans-serif, Helvetica">
+                                                    Join on your computer or mobile app<br/> 
+                                                    <a href="#" target="_blank" class="card-click">CLICK HERE</a>  to join the meeting, or<br/>
+                                                    call in (audio only)<br/>
+                                                    <a href="(866) 789-6243" target="_blank" class="card-phone">(866) 789-6243,,180919972#</a>
+                                                </p>
+                                            </td>
+                                            <!-- /.td-card -->
+
+
+                                            <td class="td-card pr-20" style="padding-left: 20px;">
+                                                <img src="card4.png" alt="photo2">
+                                                <h5 style="font-family:Arial, Helvetica, sans-serif, Raleway">AVA PLAN</h5>
+                                                <p style="font-family:Arial, sans-serif, Helvetica">07/12/2021 12PM PST / 3PM EST</p>
+                                                <p class="mb20" style="font-family:Arial, sans-serif, Helvetica">07/02/2021 10AM PST </p>
+                                                <p class="td-card-desc" style="font-family:Arial, sans-serif, Helvetica">
+                                                    Join on your computer or mobile app<br/> 
+                                                    <a href="#" target="_blank" class="card-click">CLICK HERE</a>  to join the meeting, or<br/>
+                                                    call in (audio only)<br/>
+                                                    <a href="(866) 789-6243" target="_blank" class="card-phone">(866) 789-6243,,180919972#</a>
+                                                </p> 
+                                            </td>
+                                            <!-- /.td-card -->
+
+
+                                        </tr>
+
+                                    </table>
+                                    <!-- /.table-card -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- /.td-content-card -->
+                </tr>
+
+
+                <tr>
+                    <td >
+                        <table class="table-white table-640" cellpadding="0" cellspacing="0" width="640" align="center" bgcolor="#ffffff">
+                            <tr><td height="57px" width="640">
+
+                            </td></tr>
+                        </table>
+                        <!-- /.table-white -->
+                    </td>
+                </tr>
+
+
+            </td>
+            <!--/. wrap-td-content -->
+        </tr>
+
+        <tr>
+            <td class="wrap-td-footer">
+                <table class="table-footer table-640" bgcolor="#0d3b5d" border="0" cellspacing="0" cellpadding="0" width="640" align="center">
+                    <tr>
+                        <td class="td-footer-logo" align="center">
+                            <a href=" # " target="_blank">
+                                <img src="logo.png" alt="logo">
+                            </a>
+                        </td>
+                        <!-- /.td-footer-logo -->
+                    </tr>
+                    <tr>
+                        <td class="td-footer-text" align="center">
+                            <p style="font-family:Arial, sans-serif, Helvetica"> 1100 W Town and Country Rd. Suite 1600,</p>
+                        </td>
+                        <!-- /.td-footer-text -->
+                    </tr>
+
+                    <tr>
+                        <td class="td-footer-copyright" align="center">
+                            <p style="font-family:Arial, sans-serif, Helvetica">Orange, CA 92868 &#169; 2021</p> 
+                        </td>
+                        <!-- /.td-footer-copyright -->
+                    </tr>
+
+                    <tr>
+                        <td class="td-footer-social" align="center">
+                            <table class=" table-footer-social" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td class="td-footer-social">
+                                        <a href="#" target="_blank">
+                                            <img src="f.png" alt="facebook">
+                                        </a>
+                                    </td>
+                                    <!-- /.td-footer-social -->
+            
+                                    <td class="td-footer-social">
+                                        <a href="#" target="_blank">
+                                            <img src="instagram.png" alt="instagram">
+                                        </a>
+                                    </td>
+                                    <!-- /.td-footer-social -->
+            
+                                    <td class="td-footer-social">
+                                        <a href="#" target="_blank">
+                                            <img src="in.png" alt="in">
+                                        </a>
+                                    </td>
+                                    <!-- /.td-footer-social -->
+            
+                                    <td class="td-footer-social">
+                                        <a href="#" target="_blank">
+                                            <img src="twitter.png" alt="twitter">
+                                        </a>
+                                    </td>
+                                    <!-- /.td-footer-social -->
+            
+                                    <td class="td-footer-social">
+                                        <a href="#" target="_blank">
+                                            <img src="vimeo.png" alt="vimeo">
+                                        </a>
+                                    </td>
+                                    <!-- /.td-footer-social -->
+                                </tr>
+                            </table>
+                            <!-- /.table-footer-social -->
+                        </td>
+                        <!-- /.td-footer-social -->
+                    </tr>
+                </table>
+                <!-- /.table-footer -->
+            </td>
+            <!-- /.wrap-td-footer -->
+        </tr><!-- /.footer -->
+
+        <tr>
+            <td class="td-line" height="100px" width="640"></td>
+        </tr>
+    </table>
+    <!-- wrap-table-email -->
+</body>
+
+</html>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
